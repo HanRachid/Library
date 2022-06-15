@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="top">
+      <h1 class="title">Virtual Library</h1>
+    </div>
+
+    <div class="Library">
+      <label for="name">
+        Name
+        <input type="text" id="name" />
+      </label>
+      <label for="author">
+        Author
+        <input type="text" id="author" />
+      </label>
+      <label for="length">
+        Length
+        <input type="number" min="0" id="length" />
+      </label>
+      <label for="year">
+        Year
+        <input type="number" min="0" max="2099" step="1" id="year" />
+      </label>
+      <p>Did you read this book?</p>
+      <div class="readbook">
+          <input type="radio" name="yesno" id="readyes" value="Yes" />  
+        <label for="Yes">Yes</label><br />
+          <input type="radio" name="yesno" id="readno" value="No" />
+        <label for="No">No</label><br /><br />
+      </div>
+      <button type="button" onclick="addBook()">Add book</button>
+    </div>
+
+    <div class="books">
+      <table id="myTable">
+        <tr>
+          <td>Title</td>
+          <td>Author</td>
+          <td>Year Released</td>
+          <td>Length</td>
+          <td>Read</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
